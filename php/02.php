@@ -13,8 +13,6 @@ $data = array_map(function($line) {
     ];
 }, $data);
 
-// var_dump($data);
-
 function contains_letter_sufficiently($password, $letter, $lo, $hi) {
     $num = substr_count($password, $letter);
     return $num >= $lo && $num <= $hi;
