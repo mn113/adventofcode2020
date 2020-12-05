@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 input = File.open("../inputs/input03.txt", "r")
 @grid = input.each_line.map { |row| row.chomp.split("") }
 @width = @grid[0].size

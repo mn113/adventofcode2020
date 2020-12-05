@@ -1,5 +1,6 @@
-input = File.open("../inputs/input02.txt", "r")
-#input = input.each_line.map{|line| line.split(",")}
+#!/usr/bin/env ruby
+
+input = File.open(File.expand_path("../inputs/input02.txt", __dir__), "r")
 input = input.each_line.map do |line|
     /(?<lo>\d+)-(?<hi>\d+) (?<letter>[a-z]+): (?<password>[a-z]+)/ =~ line.chomp
 
@@ -21,7 +22,7 @@ def is_valid_part2(password, letter, lo, hi)
 end
 
 # part 1
-p input.select{|inp| is_valid_part1(inp[:password], inp[:letter], inp[:lo], inp[:hi])}.length
+puts input.select{|inp| is_valid_part1(inp[:password], inp[:letter], inp[:lo], inp[:hi])}.length
 
 # part 2
-p input.select{|inp| is_valid_part2(inp[:password], inp[:letter], inp[:lo], inp[:hi])}.length
+puts input.select{|inp| is_valid_part2(inp[:password], inp[:letter], inp[:lo], inp[:hi])}.length
