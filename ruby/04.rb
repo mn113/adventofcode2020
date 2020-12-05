@@ -1,3 +1,6 @@
+#!/usr/bin/env ruby
+
+# Read whole file to be able to split extra lines
 input = File.read("../inputs/input04.txt")
 @data = input.split("\n\n").map { |record|
     record.chomp.split(/\s/).map { |field|
