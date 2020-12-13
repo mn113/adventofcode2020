@@ -14,6 +14,9 @@ https://adventofcode.com/2020
 | [Day 8: Handheld Halting](https://adventofcode.com/2020/day/8)    | :star: :star: | :snake: [08.py](python3/08.py) | - | - | - | - |
 | [Day 9: Encoding Error](https://adventofcode.com/2020/day/9)      | :star: :star: | :snake: [09.py](python3/09.py) | - | - | - | - |
 | [Day 10: Adapter Array](https://adventofcode.com/2020/day/10)     | :star: :star: | :snake: [10.py](python3/10.py) | - | - | - | - |
+| [Day 11: Seating System](https://adventofcode.com/2020/day/11)    | :star: :star: | :snake: [11.py](python3/11.py) | - | - | - | - |
+| [Day 12: Rain Risk](https://adventofcode.com/2020/day/12)         | :star: :star: | :snake: [12.py](python3/12.py) | - | - | - | - |
+| [Day 13: Shuttle Search](https://adventofcode.com/2020/day/13)    | :star: :star: | - | :rotating_light: [13.rb](ruby/13.rb) | - | - | - |
 
 ## Python
 
