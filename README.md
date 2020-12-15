@@ -17,6 +17,8 @@ https://adventofcode.com/2020
 | [Day 11: Seating System](https://adventofcode.com/2020/day/11)    | :star: :star: | :snake: [11.py](python3/11.py) | - | - | - | - |
 | [Day 12: Rain Risk](https://adventofcode.com/2020/day/12)         | :star: :star: | :snake: [12.py](python3/12.py) | - | - | - | - |
 | [Day 13: Shuttle Search](https://adventofcode.com/2020/day/13)    | :star: :star: | - | :rotating_light: [13.rb](ruby/13.rb) | - | - | - |
+| [Day 14: Docking Data](https://adventofcode.com/2020/day/14)      | :star:        | - | :rotating_light: [14.rb](ruby/14.rb) | - | - | - |
+| [Day 15: Rambunctious Recitation](https://adventofcode.com/2020/day/15) | :star: :star: | :snake: [15.py](python3/15.py) | - | - | :elephant: [15.php](php/15.php) | - |
 
 ## Python
 
