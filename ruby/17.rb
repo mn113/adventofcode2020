@@ -10,17 +10,7 @@ require 'pp'
 ##...##.
 .#...#.."""
 
-# store "on" coordinates - anything else assumed "off"
-# @on = Set.new([
-#     {x: 0, y:-1, z: 0},
-#     {x: 1, y: 0, z: 0},
-#     {x:-1, y: 1, z: 0},
-#     {x: 0, y: 1, z: 0},
-#     {x: 1, y: 1, z: 0}
-# ])
-
-
-# ingest "on" cells
+# ingest and store "on" cells - anything else assumed "off"
 def ingest_3d(initial)
     on = Set.new
     initial
@@ -72,6 +62,7 @@ end
 # consider all cells in a 3D grid, turn next copy of a cell on in certain conditions
 def advance_3d()
     @lo, @hi = @lo - 1, @hi + 1
+
     newon = Set.new
     (@lo..@hi).to_a.each do |z|
         (@lo..@hi).to_a.each do |y|
@@ -97,9 +88,7 @@ end
 6.times do
     advance_3d()
 end
-p @on.size
-p "---"
-
+p "p1: #{@on.size}"
 
 
 # ingest "on" cells
@@ -117,21 +106,6 @@ end
 
 # Set up
 @on = ingest_4d(@initial)
-
-# test input
-# """
-# .#.
-# ..#
-# ###
-# """
-# @on = Set.new([
-#     {w: 0, x: 1, y: 0, z: 0},
-#     {w: 0, x: 2, y: 1, z: 0},
-#     {w: 0, x: 0, y: 2, z: 0},
-#     {w: 0, x: 1, y: 2, z: 0},
-#     {w: 0, x: 2, y: 2, z: 0}
-# ])
-# pp @on
 
 # gets the 80 neighbours of a cell in a 4x4 hypercube around it
 # those which are "on"
@@ -157,17 +131,20 @@ def get_on_neighbs_4d(cell)
 end
 
 # initial grid bounds (any dimension)
-@lo = 0
-@hi = 7
+@lo_xy = 0
+@hi_xy = 7
+@lo_wz = @hi_wz = 0
 
 # consider all cells in a 3D grid, turn next copy of a cell on in certain conditions
 def advance_4d()
-    @lo, @hi = @lo - 1, @hi + 1
+    @lo_xy, @hi_xy = @lo_xy - 1, @hi_xy + 1
+    @lo_wz, @hi_wz = @lo_wz - 1, @hi_wz + 1
+
     newon = Set.new
-    (@lo..@hi).to_a.each do |z|
-        (@lo..@hi).to_a.each do |y|
-            (@lo..@hi).to_a.each do |x|
-                (@lo..@hi).to_a.each do |w|
+    (@lo_wz..@hi_wz).to_a.each do |z|
+        (@lo_xy..@hi_xy).to_a.each do |y|
+            (@lo_xy..@hi_xy).to_a.each do |x|
+                (@lo_wz..@hi_wz).to_a.each do |w|
                     cell = {w:w, x:x, y:y, z:z}
                     neighbs = get_on_neighbs_4d(cell)
                     if is_on? cell
@@ -186,8 +163,8 @@ def advance_4d()
     @on = newon
 end
 
-# part 2 -
-6.times do
+# part 2 - 2028
+6.times do |i|
     advance_4d()
 end
-p @on.size
+p "p2: #{@on.size}"
