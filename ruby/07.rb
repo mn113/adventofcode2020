@@ -3,7 +3,7 @@
 require 'pp'
 require 'set'
 
-@input = File.open(File.expand_path("../inputs/input07_.txt", __dir__), "r")
+@input = File.open(File.expand_path("../inputs/input07.txt", __dir__), "r")
 @data = @input.each_line.to_a
 
 # Extract bag types
@@ -49,8 +49,7 @@ empty_re = Regexp.new("no other bags")
     end
 end
 #pp @graph
-print "#{@graph.keys.count} Hash keys\n"
-p "---"
+#print "#{@graph.keys.count} Hash keys\n"
 
 ##
 # Search the graph for a path leading from start node to goal node
@@ -59,14 +58,11 @@ p "---"
 def tree_walk(start, goal)
     return false if start == goal
 
-    print "\nStart tree_walk from #{start}: "
-
     @visited = []
     @to_visit = []
 
     # @param {string} node - colour name
     def visit_node(node)
-        print "#{node}, "
         @visited.push(node)
         if @graph[node]
             @to_visit.concat(@graph[node].map{ |val| val[:colour] } )
@@ -83,11 +79,9 @@ def tree_walk(start, goal)
         if current.nil?
             break
         elsif current == goal
-            print "\n[FOUND SG! inside #{start}]\n"
             return true
         elsif @graph[current].nil?
             # dead end, skip
-            print "0, "
             next
         elsif @graph.has_key? current
             # continue walk
@@ -97,7 +91,6 @@ def tree_walk(start, goal)
             break
         end
     end
-    print "[dead end inside #{start}]"
     false
 end
 
@@ -109,22 +102,25 @@ valid_keys = @graph.keys.to_a.map{ |key|
     tree_walk(key, "shiny gold")
 }
 n = valid_keys.select{ |b| b }.count
-print "\nBags leading to shiny gold: #{n}\n"
+print "Bags leading to shiny gold: #{n}\n"
 
 ##
-# part 2
+# part 2 - 3765
 # Count the total bags inside 1 shiny gold bag
 #
 bag_list = []
-current = {amount: 1, colour: "shiny gold"}
+current = { amount: 1, colour: "shiny gold" }
 to_visit = [current]
-while to_visit.length do
+while to_visit.length > 0 do
     current = to_visit.shift
-    bag_list.push(current[:amount])
-    # count current amount, multiplied
+    next if current.nil?
+    bag_list.push(current)
+
     children = @graph[current[:colour]]
-    if children
-        to_visit.concat(children)
-    end
+    next if children.nil?
+
+    # count current amount, multiplied
+    to_visit.concat(children.map{ |bag| { amount: bag[:amount] * current[:amount], colour: bag[:colour] } })
 end
-p bag_list
+n = bag_list.map{ |bag| bag[:amount] }.reduce(&:+)
+print "Bags inside shiny gold: #{n - 1}\n"
