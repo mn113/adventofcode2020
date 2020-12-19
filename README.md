@@ -20,7 +20,7 @@ https://adventofcode.com/2020
 | [Day 14: Docking Data](https://adventofcode.com/2020/day/14)            | :star: :star: | - | :rotating_light: [14.rb](ruby/14.rb) | - | - | - |
 | [Day 15: Rambunctious Recitation](https://adventofcode.com/2020/day/15) | :star: :star: | :snake: [15.py](python3/15.py) | - | - | :elephant: [15.php](php/15.php) | - |
 | [Day 16: Ticket Translation](https://adventofcode.com/2020/day/16)      | :star: :star: | - | :rotating_light: [16.rb](ruby/16.rb) | - | - | - |
-| [Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)            | :star:        | - | :rotating_light: [17.rb](ruby/17.rb) | - | - | - |
+| [Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)            | :star: :star: | - | :rotating_light: [17.rb](ruby/17.rb) | - | - | - |
 | [Day 18: Operation Order](https://adventofcode.com/2020/day/18)         | :star: :star: | - | - | - | - | :jack_o_lantern: [18.js](js/18.js) |
 | [Day 19: Monster Messages](https://adventofcode.com/2020/day/19)        | :star: :star: | - | - | - | - | :jack_o_lantern: [19.js](js/19.js) |
 
