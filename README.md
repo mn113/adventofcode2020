@@ -20,6 +20,8 @@ https://adventofcode.com/2020
 | [Day 14: Docking Data](https://adventofcode.com/2020/day/14)            | :star:        | - | :rotating_light: [14.rb](ruby/14.rb) | - | - | - |
 | [Day 15: Rambunctious Recitation](https://adventofcode.com/2020/day/15) | :star: :star: | :snake: [15.py](python3/15.py) | - | - | :elephant: [15.php](php/15.php) | - |
 | [Day 16: Ticket Translation](https://adventofcode.com/2020/day/16)      | :star: :star: | - | :rotating_light: [16.rb](ruby/16.rb) | - | - | - |
+| [Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)            | :star:        | - | - | - | - | - |
+| [Day 18: Operation Order](https://adventofcode.com/2020/day/18)         | :star: :star: | - | - | - | - | :jack_o_lantern: [18.js](js/18.js) |
 
 ## Python
 
@@ -69,6 +71,15 @@ Run a solution
 ```
 cd elixir
 elixir -r 01.exs -e Day01.part1
+```
+
+## NodeJS
+
+Run a solution
+
+```
+cd js
+node 18.js
 ```
 
 ## TODO
