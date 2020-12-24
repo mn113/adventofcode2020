@@ -27,7 +27,7 @@ https://adventofcode.com/2020
 | [Day 21: Allergen Assessment](https://adventofcode.com/2020/day/21)     | :star: :star: | - | - | - | :elephant: [21.php](php/21.php) | - |
 | [Day 22: Crab Combat](https://adventofcode.com/2020/day/22)             | :star: :star: | - | :rotating_light: [22.rb](ruby/22.rb) | - | - | - |
 | [Day 23: Crab Cups](https://adventofcode.com/2020/day/23)               | :star: :star: | - | :rotating_light: [23.rb](ruby/23.rb) | - | - | - |
-| [Day 24: Lobby Layout](https://adventofcode.com/2020/day/24)            |               | - | - | - | - | - |
+| [Day 24: Lobby Layout](https://adventofcode.com/2020/day/24)            | :star: :star: | - | - | - | - | :jack_o_lantern: [24.js](js/24.js) |
 
 ## Python
 
