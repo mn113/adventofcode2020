@@ -28,6 +28,7 @@ https://adventofcode.com/2020
 | [Day 22: Crab Combat](https://adventofcode.com/2020/day/22)             | :star: :star: | - | :rotating_light: [22.rb](ruby/22.rb) | - | - | - |
 | [Day 23: Crab Cups](https://adventofcode.com/2020/day/23)               | :star: :star: | - | :rotating_light: [23.rb](ruby/23.rb) | - | - | - |
 | [Day 24: Lobby Layout](https://adventofcode.com/2020/day/24)            | :star: :star: | - | - | - | - | :jack_o_lantern: [24.js](js/24.js) |
+| [Day 25: Combo Breaker](https://adventofcode.com/2020/day/25)           | :star: :star: | :snake: [25.py](python3/25.py) | - | - | - | - |
 
 ## Python
 
