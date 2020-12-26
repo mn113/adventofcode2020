@@ -23,7 +23,7 @@ https://adventofcode.com/2020
 | [Day 17: Conway Cubes](https://adventofcode.com/2020/day/17)            | :star: :star: | - | :rotating_light: [17.rb](ruby/17.rb) | - | - | - |
 | [Day 18: Operation Order](https://adventofcode.com/2020/day/18)         | :star: :star: | - | - | - | - | :jack_o_lantern: [18.js](js/18.js) |
 | [Day 19: Monster Messages](https://adventofcode.com/2020/day/19)        | :star: :star: | - | - | - | - | :jack_o_lantern: [19.js](js/19.js) |
-| [Day 20: Jurassic Jigsaw](https://adventofcode.com/2020/day/20)         | :star:        | :snake: | - | - | - | - |
+| [Day 20: Jurassic Jigsaw](https://adventofcode.com/2020/day/20)         | :star: :star: | :snake: [20.py](python3/20.py) | - | - | - | - |
 | [Day 21: Allergen Assessment](https://adventofcode.com/2020/day/21)     | :star: :star: | - | - | - | :elephant: [21.php](php/21.php) | - |
 | [Day 22: Crab Combat](https://adventofcode.com/2020/day/22)             | :star: :star: | - | :rotating_light: [22.rb](ruby/22.rb) | - | - | - |
 | [Day 23: Crab Cups](https://adventofcode.com/2020/day/23)               | :star: :star: | - | :rotating_light: [23.rb](ruby/23.rb) | - | - | - |
