@@ -5,6 +5,14 @@ door_pubkey = 9281649
 
 card_loopsize = 0
 
+def transform(subjnum, loopsize):
+    val = 1
+    for i in range(loopsize):
+        val *= subjnum
+        val %= 20201227
+    print(loopsize)
+    return val
+
 # find card_loopsize: transform 7 until card_pubkey achieved
 val = 1
 subjnum = 7
@@ -22,3 +30,4 @@ else:
 # part 1 - 9714832
 encryption_key = transform(door_pubkey, card_loopsize)
 print('p1', encryption_key)
+print(transform(1,3))
